@@ -4,6 +4,11 @@
 #include <BLEUtils.h>
 #include <BLE2902.h>
 
+#include <IRsend.h>
+#include <IRrecv.h>
+#include <IRremoteESP8266.h>
+#include <IRutils.h>
+
 // the packet buffer
 extern uint8_t packetbuffer[];
 
