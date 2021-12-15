@@ -104,18 +104,14 @@ class MyCallbacks : public BLECharacteristicCallbacks {
   void onWrite(BLECharacteristic *pCharacteristic) {
     std::string rxValue = pCharacteristic->getValue();
 
+    //logic for remapping buttons/recording button presses
+    //The IR signal sending is handling outside of the callback since otherwise
+    // the BLE breaks
     if (rxValue[0] == '!' && rxValue[1] == 'B' && rxValue[2] == '1' && rxValue[3] == '1') {
       Serial.println("Yall pressed button 1");
       if (mode == SEND_MODE) {
         buttonpressed = 1;
-        /*
-          irsend.sendRaw(raw_array1, length1, kFrequency);
-          irsend.sendRaw(raw_array1, length1, kFrequency);
-          irsend.sendRaw(raw_array1, length1, kFrequency);
-          */
-      }
-      else
-      {
+      } else {
         remapNum = 1;
       }
     }
@@ -123,8 +119,7 @@ class MyCallbacks : public BLECharacteristicCallbacks {
       Serial.println("Yall pressed button 2");
       if (mode == SEND_MODE) {
         buttonpressed = 2;
-      }
-      else {
+      } else {
         remapNum = 2;
       }
     }
@@ -132,8 +127,7 @@ class MyCallbacks : public BLECharacteristicCallbacks {
       Serial.println("Yall pressed button 3");
       if (mode == SEND_MODE) {
         buttonpressed = 3;
-      }
-      else {
+      } else {
         remapNum = 3;
       }
     }
@@ -141,8 +135,7 @@ class MyCallbacks : public BLECharacteristicCallbacks {
       Serial.println("Yall pressed button 4");
       if (mode == SEND_MODE) {
         buttonpressed = 4;
-      }
-      else {
+      } else {
         remapNum = 4;
       }
     }
@@ -150,8 +143,7 @@ class MyCallbacks : public BLECharacteristicCallbacks {
       Serial.println("Yall pressed the up arrow");
       if (mode == SEND_MODE) {
         buttonpressed = 5;
-      }
-      else {
+      } else {
         remapNum = 5;
       }
     }
@@ -159,8 +151,7 @@ class MyCallbacks : public BLECharacteristicCallbacks {
       Serial.println("Yall pressed the down arrow");
       if (mode == SEND_MODE) {
         buttonpressed = 6;
-      }
-      else {
+      } else {
         remapNum = 6;
       }
     }
@@ -168,8 +159,7 @@ class MyCallbacks : public BLECharacteristicCallbacks {
       Serial.println("Yall pressed the left arrow");
       if (mode == SEND_MODE) {
         buttonpressed = 7;
-      }
-      else {
+      } else {
         remapNum = 7;
       }
     }
@@ -177,8 +167,7 @@ class MyCallbacks : public BLECharacteristicCallbacks {
       Serial.println("Yall pressed the right arrow");
       if (mode == SEND_MODE) {
         buttonpressed = 8;
-      }
-      else {
+      } else {
         remapNum = 8;
       }
     }
@@ -243,15 +232,11 @@ void loop()
   // in the main loop since otherwise the connection breaks
   if (buttonpressed != 0) {
     uint16_t sendlength = length_arr[buttonpressed-1];
-    /*for (int i = 0; i < 3; i++) {
-      irsend.sendRaw(raw_array[buttonpressed-1], length_arr[buttonpressed-1], kFrequency);
-    }*/
+    //the message is sent 3 times to ensure compatibility with sony devices
     for (int i = 0; i < 3; i++) {
       if (buttonpressed == 1) {
-        Serial.println("button1");
         irsend.sendRaw(raw_array1, sendlength, kFrequency);
       } else if (buttonpressed == 2) {
-        Serial.println("button2");
         irsend.sendRaw(raw_array2, sendlength, kFrequency);
       } else if (buttonpressed == 3) {
         irsend.sendRaw(raw_array3, sendlength, kFrequency);
@@ -299,75 +284,59 @@ void loop()
     uint16_t length = getCorrectedRawLength(&results);
 
     //Assign the received IR signal to the correct Bluetooth button
-    //raw_array[remapNum-1] = raw_array;
+    length_arr[remapNum-1] = length;
     if (remapNum == 1) {
       raw_array1 = raw_array;
-      //length1 = length;
-      length_arr[0] = length;
+      //length_arr[0] = length;
       remapNum = 0;
-      //mode = SEND_MODE;
       Serial.println("Successfully remapped button 1!");
     }
     else if (remapNum == 2) {
       raw_array2 = raw_array;
-      //length2 = length;
-      length_arr[1] = length;
+      //length_arr[1] = length;
       remapNum = 0;
-      //mode = SEND_MODE;
       Serial.println("Successfully remapped button 2!");
     }
     else if (remapNum == 3)
     {
       raw_array3 = raw_array;
-      //length3 = length;
-      length_arr[2] = length;
+      //length_arr[2] = length;
       remapNum = 0;
-      //mode = SEND_MODE;
       Serial.println("Successfully remapped button 3!");
     }
     else if (remapNum == 4)
     {
       raw_array4 = raw_array;
-      //length4 = length;
-      length_arr[3] = length;
+      //length_arr[3] = length;
       remapNum = 0;
-      //mode = SEND_MODE;
       Serial.println("Successfully remapped button 4!");
     }
     else if (remapNum == 5)
     {
       raw_array5 = raw_array;
-      //length5 = length;
-      length_arr[4] = length;
+      //length_arr[4] = length;
       remapNum = 0;
-      //mode = SEND_MODE;
       Serial.println("Successfully remapped button 5!");
     }
     else if (remapNum == 6)
     {
       raw_array6 = raw_array;
-      //length6 = length;
-      length_arr[5] = length;
+      //length_arr[5] = length;
       remapNum = 0;
-      //mode = SEND_MODE;
       Serial.println("Successfully remapped button 6!");
     }
     else if (remapNum == 7)
     {
       raw_array7 = raw_array;
-      //length7 = length;
-      length_arr[6] = length;
+      //length_arr[6] = length;
       remapNum = 0;
-      //mode = SEND_MODE;
       Serial.println("Successfully remapped button 7!");
     }
     else if (remapNum == 8)
     {
       raw_array8 = raw_array;
-      //length8 = length;
-      length_arr[7] = length;
+      //length_arr[7] = length;
       remapNum = 0;
-      //mode = SEND_MODE;
       Serial.println("Successfully remapped button 8!");
     }
 
