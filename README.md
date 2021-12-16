@@ -6,10 +6,13 @@ Code for user-programmable (via the BluefruitConnect app) Universal Remote that 
 
 # Introduction:
 
-The goal of this project was for us to combine as much knowledge as possible that we learned throughout the Embedded Systems course
-to
-check
-lines
+The goal of this project was for us to apply what we had learned throughout the semester in our Embedded Systems class
+to a hands-on project that has relevance to today's world of technology. The idea we landed on was an infrared (IR), user-programmable
+universal remote that could be controlled via Bluetooth. We chose this idea for a few reasons, ranging from personal relevance
+(we both love simplicity in controlling our entertainment setups) to accessibility (stripping away complex layers of modern technology for the general population) to challenging ourselves, as neither of us had worked with IR before. What followed was an emotional rollercoaster of victories and challenges that culminated in one last hurrah as we witnessed Sammy programming his IR devices in full force to be controlled by this remote and its accompanying Bluetooth app.
+
+Listed below are some sources we cited during our research and development (also available in the References section):
+
 
 https://crankyoldgit.github.io/IRremoteESP8266/doxygen/html/
 
