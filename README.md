@@ -58,7 +58,7 @@ This is the IR receiver that receives the IR signals from the user's devices in 
 This is the UART terminal on the BluefruitConnect app, into which the user can type "remap" and "cancel" to enter and exit Remap Mode, respectively:\
 ![Test Image 4](/ESP32_IRUniversalRemote/uart.jpeg)
 
-And finally, this is the user interface of the controller buttons on the BluefruitConnect app. In Remap Mode, the user will press a singular button followed by sending an IR signal to the remote to remap that specific button. In send mode, the user will simply press any button and the assigned IR signal will be immediately sent out of the IR LED on the remote!\
+And finally, this is the user interface of the controller buttons on the BluefruitConnect app. In Remap Mode, the user will press a singular button and subsequently send an IR signal to the remote (by pointing their device's remote at our remote and pressing the desired button on their remote) to remap that specific button. In send mode, the user will simply press any button and the assigned IR signal will be immediately sent out of the IR LED on the remote!\
 ![Test Image 5](/ESP32_IRUniversalRemote/controller.jpeg)
 
 
