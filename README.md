@@ -22,6 +22,15 @@ https://github.com/crankyoldgit/IRremoteESP8266/blob/v2.8.0/examples/IRsendDemo/
 
 https://www.maxphi.com/ir-remote-control-decoder-using-arduino
 
+# Methods:
+
+Devices Used (with rationale):
+-ESP32: provide Bluetooth support
+-Rechargeable battery: allow device to function away from a computer
+-5mm IR LED: send IR signals to user's devices
+-4x 560 Ω resistors: strengthen IR signal that we send out
+-IR Receiver TSOP38238: receive IR signals so that users can program Bluetooth app buttons
+
 
 # References:
 
