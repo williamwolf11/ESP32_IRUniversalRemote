@@ -6,6 +6,11 @@ Code for user-programmable (via the BluefruitConnect app) Universal Remote that 
 
 # Introduction:
 
+The goal of this project was for us to combine as much knowledge as possible that we learned throughout the Embedded Systems course
+to
+check
+lines
+
 https://crankyoldgit.github.io/IRremoteESP8266/doxygen/html/
 
 https://github.com/Arduino-IRremote/Arduino-IRremote
