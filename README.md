@@ -70,7 +70,11 @@ And finally, this is the user interface of the controller buttons on the Bluefru
 
 # Issues:
 
+The biggest issue we ran into while creating this project was that initially, instead of polling the buttonPressed variable in our main loop during send mode and calling the sendRaw function from there, we were sending IR signals directly from the UART Bluetooth callback, which was breaking our Bluetooth connection and causing all sorts of problems. This was a difficult issue to overcome because we were not receiving informative error messages as it was happening, and the remote was "sort of" working in this state, which led to a great deal of confusion. Luckily, we were able to figure it out in the end and get everything up and running in a very smooth manner!
+
 # Future Work:
+
+If we had more time to work on this project, there are a few things we would have liked to do/implement. First and foremost, we would have done some arts and crafts. In other words, we would have hidden the wires with some cardboard and made the remote look like an actual remote! Additionally, we would have dedicated our extra time to increasing the accessibility of our remote. In its current state, we rely on an app that can only be as accessible as the user's phone settings allow it to be. With more time, it would have been awesome to develop our own app that would be designed to include as many users as possible and be as accessible as possible for differently abled people who might have trouble using a standard touchscreen app. For example, voice controls would be a nice feature for users with limited mobility.
 
 # References:
 
