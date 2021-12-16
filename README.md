@@ -43,8 +43,11 @@ Premium Silicone Covered Male-Male Jumper Wires	- $9.95	- https://www.adafruit.c
 Lithium Ion Battery - 3.7V 350mAH - $6.95	- https://www.adafruit.com/product/2750
 
 # Result:
-
-![Test Image 1](/ESP32_IRUniversalRemote/controller.jpeg)
+![Test Image 1](/ESP32_IRUniversalRemote/sammy1.jpeg)
+![Test Image 2](/ESP32_IRUniversalRemote/sammy2.jpeg)
+![Test Image 3](/ESP32_IRUniversalRemote/sammy3.jpeg)
+![Test Image 4](/ESP32_IRUniversalRemote/uart.jpeg)
+![Test Image 5](/ESP32_IRUniversalRemote/controller.jpeg)
 
 # Accessibility:
 
