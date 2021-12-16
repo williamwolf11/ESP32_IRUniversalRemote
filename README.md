@@ -68,6 +68,13 @@ And finally, this is the user interface of the controller buttons on the Bluefru
 
 # Schedule:
 
+Our initial, planned schedule was as follows:
+
+Week 9 - Recognize and read IR signals - we will quantify/test this milestone by having our signals print unique and appropriate output into the Serial Port. Successfully send out a simple, one-button command to the TV. We will start with an on/off button, and we will test this by making sure it works on both Will's TV AND Sammy’s TV.\
+Week 10 - Send out a series of signals with proper timing, and start to work on bluetooth\
+Week 11 - Allow the user to program the remote with a sequence of signals of their choosing and finish bluetooth work\
+Week 12 - Finish up and debug - final touches
+
 # Issues:
 
 The biggest issue we ran into while creating this project was that initially, instead of polling the buttonPressed variable in our main loop during send mode and calling the sendRaw function from there, we were sending IR signals directly from the UART Bluetooth callback, which was breaking our Bluetooth connection and causing all sorts of problems. This was a difficult issue to overcome because we were not receiving informative error messages as it was happening, and the remote was "sort of" working in this state, which led to a great deal of confusion. Luckily, we were able to figure it out in the end and get everything up and running in a very smooth manner!
