@@ -64,7 +64,11 @@ And finally, this is the user interface of the controller buttons on the Bluefru
 
 # Accessibility:
 
+The main accessibility victory for our project is that, by its nature, our remote can help the various groups of people in the world who are overwhelmed by the many devices and remotes often necessary to set up modern entertainment systems. Not only that but, because it is user-programmable, a user could theoretically verbally instruct someone to help them program the remote, after which all they would need to do is open the BluefruitConnect app, connect to our device, press "controller," and press their desired buttons as needed. Additionally, the low-cost nature of our project allows this device to be accessible in an economic way. Possibilities for additional accessibility are detailed in the "Future Work" section below.
+
 # Ethical Implications:
+
+The biggest ethical implication/issue of our remote can best be described by the following question: do we really need more remotes? Whereas this type of remote/device can make modern entertainment setups much more accessible for less tech-savvy users, which is a positive outcome, the origin of this problem in the first place is that people often own several devices with their own remotes that can be confusing to use in parallel. Unfortunately, because of this, adding another remote into the picture (which uses plastic and other potentially environmentally harmful resources) is not particularly environmentally conscious. Additionally, most modern TVs, for example, are "Smart TVs" which can perform many different functions that previously required multiple devices with potentially multiple remotes. So, as these TVs improve in their own user interfaces, perhaps there will no longer be a need for universal remotes down the road, as people will be able to do everything they need with just a TV and one remote, or a TV and one or two other devices. 
 
 # Schedule:
 
@@ -78,13 +82,25 @@ Week 11 - Allow the user to program the remote with a sequence of signals of the
 
 Week 12 - Finish up and debug - final touches.
 
+Our actual schedule is detailed below:
+
+Week 9 - Order parts.
+
+Week 10 - Parts arrive, Thanksgiving break (no work done).
+
+Week 11 - Build remote, send out simple on/off signal from our remote to Sammy's TV.
+
+Week 12 - Implement Bluetooth, program all relevant logic, debug/test.
+
+Ultimately, while the last two weeks ended up being quite busy for us, due to the busy nature of both of our schedules, we ended up having the most time to work on the project during those last two weeks, so we don't see the change in schedule as a mismanagement of time, but rather an adjustment we made based on when we would have the most time to work on the project and maintain healthy sleep schedules and work/life balance.
+
 # Issues:
 
 The biggest issue we ran into while creating this project was that initially, instead of polling the buttonPressed variable in our main loop during send mode and calling the sendRaw function from there, we were sending IR signals directly from the UART Bluetooth callback, which was breaking our Bluetooth connection and causing all sorts of problems. This was a difficult issue to overcome because we were not receiving informative error messages as it was happening, and the remote was "sort of" working in this state, which led to a great deal of confusion. Luckily, we were able to figure it out in the end and get everything up and running in a very smooth manner!
 
 # Future Work:
 
-If we had more time to work on this project, there are a few things we would have liked to do/implement. First and foremost, we would have done some arts and crafts. In other words, we would have hidden the wires with some cardboard and made the remote look like an actual remote! Additionally, we would have dedicated our extra time to increasing the accessibility of our remote. In its current state, we rely on an app that can only be as accessible as the user's phone settings allow it to be. With more time, it would have been awesome to develop our own app that would be designed to include as many users as possible and be as accessible as possible for differently abled people who might have trouble using a standard touchscreen app. For example, voice controls would be a nice feature for users with limited mobility.
+If we had more time to work on this project, there are a few things we would have liked to do/implement. First and foremost, we would have done some arts and crafts. In other words, we would have hidden the wires with some cardboard and made the remote look like an actual remote! Additionally, we would have dedicated our extra time to increasing the accessibility of our remote. In its current state, we rely on an app that can only be as accessible as the user's phone settings allow it to be. With more time, it would have been awesome to develop our own app that would be designed to include as many users as possible and be as accessible as possible for differently abled people who might have trouble using a standard touchscreen app. For example, voice controls would be a nice feature for users with limited mobility. One other idea we had accessibility-wise is that, because our device has Bluetooth functionality, we could theoretically program it to be usable by many other Bluetooth devices which are already designed to be accessible and inclusive to differently abled users.
 
 # References:
 
