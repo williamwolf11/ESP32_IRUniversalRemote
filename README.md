@@ -35,7 +35,11 @@ User Interface:\
 -stuff
 
 Bill of Materials:\
--bill of mats
+5mm IR LED - 25 Pack - $7.95 - https://www.adafruit.com/product/388 \
+IR Receiver Sensor - $1.95 - https://www.adafruit.com/product/157 \
+Full Sized Breadboard - $5.95	- https://www.adafruit.com/product/239 \
+Premium Silicone Covered Male-Male Jumper Wires	- $9.95	- https://www.adafruit.com/product/4482 \
+Lithium Ion Battery - 3.7V 350mAH - $6.95	- https://www.adafruit.com/product/2750
 
 # References:
 
