@@ -14,9 +14,9 @@ universal remote that could be controlled via Bluetooth. We chose this idea for 
 Listed below are some sources we cited during our research and development (also available in the References section):
 
 
-https://crankyoldgit.github.io/IRremoteESP8266/doxygen/html/\
-https://github.com/Arduino-IRremote/Arduino-IRremote\
-https://github.com/crankyoldgit/IRremoteESP8266/blob/v2.8.0/examples/IRsendDemo/IRsendDemo.ino\
+https://crankyoldgit.github.io/IRremoteESP8266/doxygen/html/ \
+https://github.com/Arduino-IRremote/Arduino-IRremote \
+https://github.com/crankyoldgit/IRremoteESP8266/blob/v2.8.0/examples/IRsendDemo/IRsendDemo.ino \
 https://www.maxphi.com/ir-remote-control-decoder-using-arduino
 
 # Methods:
@@ -31,7 +31,7 @@ Devices Used (with rationale):
 
 # References:
 
-https://crankyoldgit.github.io/IRremoteESP8266/doxygen/html/\
-https://github.com/Arduino-IRremote/Arduino-IRremote\
-https://github.com/crankyoldgit/IRremoteESP8266/blob/v2.8.0/examples/IRsendDemo/IRsendDemo.ino\
+https://crankyoldgit.github.io/IRremoteESP8266/doxygen/html/ \
+https://github.com/Arduino-IRremote/Arduino-IRremote \
+https://github.com/crankyoldgit/IRremoteESP8266/blob/v2.8.0/examples/IRsendDemo/IRsendDemo.ino \
 https://www.maxphi.com/ir-remote-control-decoder-using-arduino
