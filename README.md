@@ -43,11 +43,22 @@ Premium Silicone Covered Male-Male Jumper Wires	- $9.95	- https://www.adafruit.c
 Lithium Ion Battery - 3.7V 350mAH - $6.95	- https://www.adafruit.com/product/2750
 
 # Result:
+
+First, let's take a look at some pictures of the remote itself! \
+
+This first shows a general view of the remote:\
 ![Test Image 1](/ESP32_IRUniversalRemote/sammy1.jpeg)
+
+Next up, we've got a picture of the IR LED, which is used to send out user-programmed IR signals when the user presses the appropriate button on the BluefruitConnect app:\
 ![Test Image 2](/ESP32_IRUniversalRemote/sammy2.jpeg)
+
+And finally, this is the IR receiver that receives the IR signals from the user's devices in remap mode to make the remote user-programmable:\
 ![Test Image 3](/ESP32_IRUniversalRemote/sammy3.jpeg)
+
 ![Test Image 4](/ESP32_IRUniversalRemote/uart.jpeg)
+
 ![Test Image 5](/ESP32_IRUniversalRemote/controller.jpeg)
+
 
 # Accessibility:
 
