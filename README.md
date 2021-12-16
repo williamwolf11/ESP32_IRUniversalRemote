@@ -44,7 +44,7 @@ Lithium Ion Battery - 3.7V 350mAH - $6.95	- https://www.adafruit.com/product/275
 
 # Result:
 
-Below are some pictures of the remote and BluefruitConnect app with accompanying instructions for how to use it:
+Below are some pictures of the remote and BluefruitConnect app with accompanying instructions for how to use it.
 
 This first picture shows a general view of the remote:\
 ![Test Image 1](/ESP32_IRUniversalRemote/sammy1.jpeg)
