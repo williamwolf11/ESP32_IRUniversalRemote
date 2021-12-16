@@ -44,7 +44,7 @@ Lithium Ion Battery - 3.7V 350mAH - $6.95	- https://www.adafruit.com/product/275
 
 # Result:
 
-<img src="https://https://github.com/williamwolf11/ESP32_IRUniversalRemote/blob/main/ESP32_IRUniversalRemote/controller.jpeg">
+![Test Image 1](https://https://github.com/williamwolf11/ESP32_IRUniversalRemote/blob/main/ESP32_IRUniversalRemote/controller.jpeg)
 
 # Accessibility:
 
