@@ -42,6 +42,8 @@ Full Sized Breadboard - $5.95	- https://www.adafruit.com/product/239 \
 Premium Silicone Covered Male-Male Jumper Wires	- $9.95	- https://www.adafruit.com/product/4482 \
 Lithium Ion Battery - 3.7V 350mAH - $6.95	- https://www.adafruit.com/product/2750
 
+# Result:
+
 # Accessibility:
 
 # Ethical Implications:
