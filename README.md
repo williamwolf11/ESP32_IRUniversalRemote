@@ -102,6 +102,10 @@ The biggest issue we ran into while creating this project was that initially, in
 
 If we had more time to work on this project, there are a few things we would have liked to do/implement. First and foremost, we would have done some arts and crafts. In other words, we would have hidden the wires with some cardboard and made the remote look like an actual remote! Additionally, we would have dedicated our extra time to increasing the accessibility of our remote. In its current state, we rely on an app that can only be as accessible as the user's phone settings allow it to be. With more time, it would have been awesome to develop our own app that would be designed to include as many users as possible and be as accessible as possible for differently abled people who might have trouble using a standard touchscreen app. For example, voice controls would be a nice feature for users with limited mobility. One other idea we had accessibility-wise is that, because our device has Bluetooth functionality, we could theoretically program it to be usable by many other Bluetooth devices which are already designed to be accessible and inclusive to differently abled users.
 
+# Demo Video:
+
+https://drive.google.com/file/d/1Ix689PLs6tVH6722Z8_cGZKShVGIWbWg/view?usp=sharing
+
 # References:
 
 https://crankyoldgit.github.io/IRremoteESP8266/doxygen/html/ \
